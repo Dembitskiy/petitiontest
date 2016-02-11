@@ -28,5 +28,6 @@ public class PetitionSearchTest {
         PetitionSearchPage petitionSearchPage = petitionPage.search(PetitionPage.SEARCH_RESULT);
         softAssert.assertEquals(petitionSearchPage.findText(PetitionSearchPage.FIND_TEXT),true);
         System.out.print(petitionSearchPage.findText(PetitionSearchPage.FIND_TEXT));
+        softAssert.assertAll();
     }
 }
