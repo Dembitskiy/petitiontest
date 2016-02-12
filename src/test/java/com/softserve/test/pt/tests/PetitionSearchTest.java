@@ -36,7 +36,7 @@ public class PetitionSearchTest {
         softAssert = new SoftAssert();
     }
 
-    
+
     @Title("petition metallica test")
     @Description("check if 'Metallica' text is present on the page")
     @Attachment(value = "{0}", type = "image/png")
@@ -46,9 +46,7 @@ public class PetitionSearchTest {
         PetitionPage petitionPage = StartPage.get().load(startData);
         PetitionSearchPage petitionSearchPage = petitionPage.search(PetitionPage.SEARCH_RESULT);
         softAssert.assertEquals(petitionSearchPage.findText(PetitionSearchPage.FIND_TEXT),true);
-        System.out.print(petitionSearchPage.findText(PetitionSearchPage.FIND_TEXT));
         softAssert.assertAll();
-
 
     }
 }
