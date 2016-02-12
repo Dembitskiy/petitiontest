@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite start="1455285247907" stop="1455285260289" version="1.4.16" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+<ns2:test-suite start="1455288825478" stop="1455288837150" version="1.4.16" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
     <name>Suite1 : Test1</name>
     <title>Suite1 : Test1</title>
     <test-cases>
-        <test-case start="1455285247994" stop="1455285260286" status="failed">
+        <test-case start="1455288825548" stop="1455288837147" status="failed">
             <name>test1</name>
             <title>petition metallica test</title>
             <description type="text">check if 'Metallica' text is present on the page</description>
@@ -44,17 +44,17 @@
 </stack-trace>
             </failure>
             <steps>
-                <step start="1455285248136" stop="1455285260058" status="failed">
+                <step start="1455288825688" stop="1455288836966" status="failed">
                     <name>test1</name>
                     <title>assert step</title>
                 </step>
             </steps>
             <attachments>
-                <attachment title="Time: 12-12-1993 09:25:23 Test: test1" source="fbb39968-2523-476c-8ac6-becdcc4de75c-attachment.png" type="image/png"/>
+                <attachment title="Time: лют.-12-2016 04:53:56 Test: test1" source="f052fcdf-eb8b-45bb-a205-2fb8fa15771f-attachment.png" type="image/png"/>
             </attachments>
             <labels>
                 <label name="host" value="sultan"/>
-                <label name="thread" value="900@sultan.main(1)"/>
+                <label name="thread" value="7604@sultan.main(1)"/>
             </labels>
         </test-case>
     </test-cases>

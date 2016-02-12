@@ -53,7 +53,7 @@ public class PetitionSearchTest {
     @Title("petition metallica test")
     @Description("check if 'Metallica' text is present on the page")
     @Attachment(value = "{0}", type = "image/png")
-    @Step("assert step")
+    @Step("assert if expected test equals to actual")
     @Test
     public void test1(){
         PetitionPage petitionPage = StartPage.get().load(startData);

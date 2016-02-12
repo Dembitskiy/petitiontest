@@ -10,7 +10,7 @@
       "broken" : 0
     },
     "stories" : [ {
-      "uid" : "a29085ce391e1293",
+      "uid" : "fbb6145da7c6e2bd",
       "title" : "Without story",
       "statistic" : {
         "total" : 1,
@@ -21,13 +21,13 @@
         "broken" : 0
       },
       "testCases" : [ {
-        "uid" : "5741fb8ba8d300c9",
+        "uid" : "c21c5a55a0009d80",
         "name" : "test1",
         "title" : "petition metallica test",
         "time" : {
-          "start" : 1455285247994,
-          "stop" : 1455285260286,
-          "duration" : 12292
+          "start" : 1455288825548,
+          "stop" : 1455288837147,
+          "duration" : 11599
         },
         "severity" : "NORMAL",
         "status" : "FAILED"

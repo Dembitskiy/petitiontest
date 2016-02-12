@@ -10,6 +10,8 @@ import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 import ru.yandex.qatools.allure.annotations.Attachment;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -30,7 +32,10 @@ import java.util.Date;
         String currentTestName = "test1";
         webDriver = BrowserUtils.get().getBrowser().getWebDriver();
         Preconditions.checkNotNull(webDriver, "WebDriver instance is null!");
-        String resultDateTime = "12-12-1993 09:25:23";
+        Date today = Calendar.getInstance().getTime();
+        SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
+        String resultDateTime = sdf.format(today);
+                //DateUtils.parseDate(new Date(), DATE_FORMAT);
         String screenShotName = "Time: " + resultDateTime + " Test: "
                 + currentTestName;
         makeScreenshot(screenShotName);

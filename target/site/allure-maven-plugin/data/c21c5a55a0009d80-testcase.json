@@ -1,11 +1,11 @@
 {
-  "uid" : "5741fb8ba8d300c9",
+  "uid" : "c21c5a55a0009d80",
   "name" : "test1",
   "title" : "petition metallica test",
   "time" : {
-    "start" : 1455285247994,
-    "stop" : 1455285260286,
-    "duration" : 12292
+    "start" : 1455288825548,
+    "stop" : 1455288837147,
+    "duration" : 11599
   },
   "summary" : {
     "attachments" : 1,
@@ -23,7 +23,7 @@
   "status" : "FAILED",
   "testId" : null,
   "suite" : {
-    "uid" : "2900103b88265292",
+    "uid" : "92c2379ef4182d8c",
     "name" : "Suite1 : Test1",
     "title" : "Suite1 : Test1"
   },
@@ -31,9 +31,9 @@
     "name" : "test1",
     "title" : "assert step",
     "time" : {
-      "start" : 1455285248136,
-      "stop" : 1455285260058,
-      "duration" : 11922
+      "start" : 1455288825688,
+      "stop" : 1455288836966,
+      "duration" : 11278
     },
     "summary" : {
       "attachments" : 0,
@@ -44,11 +44,11 @@
     "steps" : [ ]
   } ],
   "attachments" : [ {
-    "title" : "Time: 12-12-1993 09:25:23 Test: test1",
-    "source" : "fbb39968-2523-476c-8ac6-becdcc4de75c-attachment.png",
+    "title" : "Time: лют.-12-2016 04:53:56 Test: test1",
+    "source" : "f052fcdf-eb8b-45bb-a205-2fb8fa15771f-attachment.png",
     "type" : "image/png",
     "size" : 46892,
-    "uid" : "d636ab7bcc77d1e"
+    "uid" : "84eddbefa309abe2"
   } ],
   "issues" : [ ],
   "labels" : [ {
@@ -56,7 +56,7 @@
     "value" : "sultan"
   }, {
     "name" : "thread",
-    "value" : "900@sultan.main(1)"
+    "value" : "7604@sultan.main(1)"
   }, {
     "name" : "suite-name",
     "value" : "Suite1 : Test1"
