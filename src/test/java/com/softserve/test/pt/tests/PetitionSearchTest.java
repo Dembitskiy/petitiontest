@@ -36,20 +36,7 @@ public class PetitionSearchTest {
         softAssert = new SoftAssert();
     }
 
-    @Attachment(value = "{0}", type = "image/png")
-    public static byte[] saveImageAttach(String attachName) {
-        try {
-            return  ((TakesScreenshot)BrowserUtils.get().getBrowser().getWebDriver()).getScreenshotAs(OutputType.BYTES);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return new byte[0];
-    }
-    private static byte[] toByteArray(File file) throws IOException {
-        return Files.readAllBytes(Paths.get(file.getPath()));
-    }
-
-
+    
     @Title("petition metallica test")
     @Description("check if 'Metallica' text is present on the page")
     @Attachment(value = "{0}", type = "image/png")
@@ -60,7 +47,6 @@ public class PetitionSearchTest {
         PetitionSearchPage petitionSearchPage = petitionPage.search(PetitionPage.SEARCH_RESULT);
         softAssert.assertEquals(petitionSearchPage.findText(PetitionSearchPage.FIND_TEXT),true);
         System.out.print(petitionSearchPage.findText(PetitionSearchPage.FIND_TEXT));
-     //   saveImageAttach("Image attach");
         softAssert.assertAll();
 
 
