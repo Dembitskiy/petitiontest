@@ -1,0 +1,20 @@
+{
+  "hosts" : [ {
+    "title" : "sultan",
+    "threads" : [ {
+      "title" : "900@sultan.main(1)",
+      "testCases" : [ {
+        "uid" : "5741fb8ba8d300c9",
+        "name" : "test1",
+        "title" : "petition metallica test",
+        "time" : {
+          "start" : 1455285247994,
+          "stop" : 1455285260286,
+          "duration" : 12292
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  } ]
+}

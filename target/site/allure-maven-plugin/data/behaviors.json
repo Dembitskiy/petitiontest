@@ -1,0 +1,37 @@
+{
+  "features" : [ {
+    "title" : "Without feature",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 1,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "a29085ce391e1293",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 1,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "5741fb8ba8d300c9",
+        "name" : "test1",
+        "title" : "petition metallica test",
+        "time" : {
+          "start" : 1455285247994,
+          "stop" : 1455285260286,
+          "duration" : 12292
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  } ]
+}

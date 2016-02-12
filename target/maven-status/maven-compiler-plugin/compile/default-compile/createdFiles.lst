@@ -12,6 +12,7 @@ com\softserve\test\at\data\StartData.class
 com\softserve\test\at\controls\TextField.class
 com\softserve\test\at\controls\ABaseComponent.class
 com\softserve\test\at\tools\ASearchContext.class
+com\softserve\test\at\tools\ScreenShotMaker.class
 com\softserve\test\at\controls\AButton.class
 com\softserve\test\at\tools\FirefoxBrowser.class
 com\softserve\test\at\controls\ILabel.class

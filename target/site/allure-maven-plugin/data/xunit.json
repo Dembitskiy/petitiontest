@@ -1,0 +1,38 @@
+{
+  "time" : {
+    "start" : 1455285247994,
+    "stop" : 1455285260286,
+    "duration" : 12292
+  },
+  "testSuites" : [ {
+    "uid" : "2900103b88265292",
+    "name" : "Suite1 : Test1",
+    "title" : "Suite1 : Test1",
+    "time" : {
+      "start" : 1455285247994,
+      "stop" : 1455285260286,
+      "duration" : 12292
+    },
+    "statistic" : {
+      "total" : 1,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 1,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "5741fb8ba8d300c9",
+      "name" : "test1",
+      "title" : "petition metallica test",
+      "time" : {
+        "start" : 1455285247994,
+        "stop" : 1455285260286,
+        "duration" : 12292
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    } ]
+  } ]
+}
