@@ -1,21 +1,23 @@
 package com.softserve.test.pt.pages;
 
 import com.softserve.test.at.controls.*;
+import ru.yandex.qatools.allure.annotations.Step;
 
 /**
  * Created by rdem on 10.02.2016.
  */
 public class PetitionPage {
 
-    public static final String SEARCH_RESULT = "Metallica";
- private PetitionPageUIMap controls;
+    public static final String SEARCH_RESULT_METALLICA = "Metallica";
+    public static final String SEARCH_RESULT_MINISTER = "міністр";
+    private PetitionPageUIMap controls;
 
-    private class PetitionPageUIMap{
-    public ITextField searchfield;
-    public ILabelClickable continuesToCollect;
-    public ILabelClickable underConsideration;
-    public ILabel essenseOfAppeal;
-    public IButton searchSubmit;
+    private class PetitionPageUIMap {
+        public ITextField searchfield;
+        public ILabelClickable continuesToCollect;
+        public ILabelClickable underConsideration;
+        public ILabel essenseOfAppeal;
+        public IButton searchSubmit;
 
         public PetitionPageUIMap() {
             this.searchfield = TextField.get().getByCssSelector(".txt_input.vat");
@@ -33,9 +35,11 @@ public class PetitionPage {
             this.essenseOfAppeal = essenseOfAppeal;
         }
     }
-    public PetitionPage(){
+
+    public PetitionPage() {
         controls = new PetitionPageUIMap();
     }
+
     public ITextField getSearchfield() {
         return controls.searchfield;
     }
@@ -48,24 +52,22 @@ public class PetitionPage {
         return controls.continuesToCollect;
     }
 
-
     public ILabelClickable getUnderConsideration() {
         return controls.underConsideration;
     }
-
 
     public IButton getSearchSubmit() {
         return controls.searchSubmit;
     }
 
-    public  void clickSearchSubmit()
-    {
+    public void clickSearchSubmit() {
         getSearchSubmit().click();
     }
 
-    public PetitionSearchPage search(String search){
+    @Step("find petitions by search field")
+    public PetitionSearchPage search(String search) {
         setSearchfield(search);
-       clickSearchSubmit();
+        clickSearchSubmit();
         return new PetitionSearchPage();
     }
 }

@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.385 sec <<< FAILURE! - in TestSuite
-test1(com.softserve.test.pt.tests.PetitionSearchTest)  Time elapsed: 11.623 sec  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.893 sec <<< FAILURE! - in TestSuite
+checkmetallicapetition(com.softserve.test.pt.tests.PetitionSearchTest)  Time elapsed: 10.941 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.softserve.test.pt.tests.PetitionSearchTest.test1(PetitionSearchTest.java:64)
+	at com.softserve.test.pt.tests.PetitionSearchTest.checkmetallicapetition(PetitionSearchTest.java:44)
 

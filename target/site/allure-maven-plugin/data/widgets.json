@@ -12,10 +12,10 @@
     "name" : "xunit",
     "type" : "TITLE_STATISTICS",
     "data" : [ {
-      "title" : "Suite1 : Test1",
+      "title" : "Petitionsuite : petitiontests",
       "statistic" : {
-        "total" : 1,
-        "passed" : 0,
+        "total" : 2,
+        "passed" : 1,
         "pending" : 0,
         "canceled" : 0,
         "failed" : 1,
@@ -28,8 +28,8 @@
     "data" : [ {
       "title" : "Without feature",
       "statistic" : {
-        "total" : 1,
-        "passed" : 0,
+        "total" : 2,
+        "passed" : 1,
         "pending" : 0,
         "canceled" : 0,
         "failed" : 1,

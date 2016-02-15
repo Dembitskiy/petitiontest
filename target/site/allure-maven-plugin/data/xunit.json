@@ -1,21 +1,21 @@
 {
   "time" : {
-    "start" : 1455288825548,
-    "stop" : 1455288837147,
-    "duration" : 11599
+    "start" : 1455548177472,
+    "stop" : 1455548197568,
+    "duration" : 20096
   },
   "testSuites" : [ {
-    "uid" : "92c2379ef4182d8c",
-    "name" : "Suite1 : Test1",
-    "title" : "Suite1 : Test1",
+    "uid" : "25db38bad65b6f6a",
+    "name" : "Petitionsuite : petitiontests",
+    "title" : "Petitionsuite : petitiontests",
     "time" : {
-      "start" : 1455288825548,
-      "stop" : 1455288837147,
-      "duration" : 11599
+      "start" : 1455548177472,
+      "stop" : 1455548197568,
+      "duration" : 20096
     },
     "statistic" : {
-      "total" : 1,
-      "passed" : 0,
+      "total" : 2,
+      "passed" : 1,
       "pending" : 0,
       "canceled" : 0,
       "failed" : 1,
@@ -23,16 +23,27 @@
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "c21c5a55a0009d80",
-      "name" : "test1",
+      "uid" : "50fa2fddc59554d",
+      "name" : "checkmetallicapetition",
       "title" : "petition metallica test",
       "time" : {
-        "start" : 1455288825548,
-        "stop" : 1455288837147,
-        "duration" : 11599
+        "start" : 1455548177472,
+        "stop" : 1455548188381,
+        "duration" : 10909
       },
       "severity" : "NORMAL",
       "status" : "FAILED"
+    }, {
+      "uid" : "b0aab1929699bacf",
+      "name" : "checkministrpetition",
+      "title" : "petition minister test",
+      "time" : {
+        "start" : 1455548188406,
+        "stop" : 1455548197568,
+        "duration" : 9162
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
     } ]
   } ]
 }

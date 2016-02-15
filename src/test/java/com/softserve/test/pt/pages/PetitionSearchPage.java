@@ -8,7 +8,8 @@ import com.softserve.test.at.tools.BrowserUtils;
  * Created by rdem on 10.02.2016.
  */
 public class PetitionSearchPage {
-    public static final String FIND_TEXT = "Запросити в Україну легендарну рок-групу Metallica";
+    public static final String FIND_TEXT_METALLICA = "Запросити в Україну легендарну рок-групу Metallica";
+    public static final String FIND_TEXT_MINISTER = "Вибори прем'єр-міністра за відкритим конкурсом";
     private PetitionSearchPageUIMap controls;
 
 
@@ -26,6 +27,6 @@ public class PetitionSearchPage {
 
 
     public boolean findText(String findText) {
-        return BrowserUtils.get().getBrowser().getWebDriver().getPageSource().contains("findText");
+        return BrowserUtils.get().getBrowser().getWebDriver().getPageSource().contains(findText);
     }
 }

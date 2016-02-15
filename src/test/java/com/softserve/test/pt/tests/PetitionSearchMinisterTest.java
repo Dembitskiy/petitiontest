@@ -15,9 +15,9 @@ import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
 /**
- * Created by rdem on 10.02.2016.
+ * Created by rdem on 15.02.2016.
  */
-public class PetitionSearchTest {
+public class PetitionSearchMinisterTest {
 
     private SoftAssert softAssert;
     private StartData startData;
@@ -34,15 +34,19 @@ public class PetitionSearchTest {
         BrowserUtils.get().getBrowser().close();
     }
 
-    @Title("petition metallica test")
-    @Description("check if 'Запросити в Україну легендарну рок-групу Metallica' text is present on the page")
+
+    @Title("petition minister test")
+    @Description("check if 'Вибори прем'єр-міністра за відкритим конкурсом' is present on the page")
     @Test
-    public void checkmetallicapetition() {
+    public void checkministrpetition() {
         PetitionPage petitionPage = StartPage.get().load(startData);
-        PetitionSearchPage petitionSearchPage = petitionPage.search(PetitionPage.SEARCH_RESULT_METALLICA);
-        softAssert.assertEquals(petitionSearchPage.findText(PetitionSearchPage.FIND_TEXT_METALLICA), true);
+        PetitionSearchPage petitionSearchPage = petitionPage.search(PetitionPage.SEARCH_RESULT_MINISTER);
+        softAssert.assertEquals(petitionSearchPage.findText(PetitionSearchPage.FIND_TEXT_MINISTER), true);
         softAssert.assertAll();
     }
 
 
 }
+
+
+

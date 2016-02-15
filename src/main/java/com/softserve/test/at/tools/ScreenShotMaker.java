@@ -5,6 +5,7 @@ import org.apache.commons.lang3.time.DateUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
@@ -19,7 +20,6 @@ import java.util.Date;
  */public class ScreenShotMaker extends TestListenerAdapter {
 
     private ITestContext context;
-    private WebDriver webDriver;
     private static final String DATE_FORMAT = "MMM-dd-yyy hh:mm:ss";
 
     @Override
@@ -29,21 +29,24 @@ import java.util.Date;
 
     @Override
     public void onTestFailure(ITestResult testResult) {
-        String currentTestName = "test1";
-        webDriver = BrowserUtils.get().getBrowser().getWebDriver();
+       // String currentTestName = "test1";
+        WebDriver webDriver = BrowserUtils.get().getBrowser().getWebDriver();
         Preconditions.checkNotNull(webDriver, "WebDriver instance is null!");
         Date today = Calendar.getInstance().getTime();
         SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
         String resultDateTime = sdf.format(today);
                 //DateUtils.parseDate(new Date(), DATE_FORMAT);
-        String screenShotName = "Time: " + resultDateTime + " Test: "
-                + currentTestName;
+        String screenShotName = "Time: " + resultDateTime;
         makeScreenshot(screenShotName);
     }
 
+
+
+
     @Attachment(value = "{0}", type = "image/png")
-    private byte[] makeScreenshot(String name) {
-        return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
+    public byte[] makeScreenshot(String name) {
+        return ((TakesScreenshot) BrowserUtils.get().getBrowser().getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
+
 
 }
