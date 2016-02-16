@@ -64,12 +64,10 @@ public class ControlWrapper {
     }
 
     public String getUrl() {
-        // TODO Check Tag
         if (getTagName().toLowerCase().equals(TAG_A)) {
             return getWebElement().getAttribute(ATTRIBUTE_HREF);
         } else {
             // TODO
-            //throw new GeneralCustomException(INVALID_TAG);
             throw new RuntimeException(INVALID_TAG);
         }
     }
@@ -105,7 +103,6 @@ public class ControlWrapper {
     }
 
     public void setFocus() {
-        // TODO Make Visible. Scrolling browser
         sendKeys(new String());
     }
 

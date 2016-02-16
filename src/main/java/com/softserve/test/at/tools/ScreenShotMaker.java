@@ -35,7 +35,6 @@ import java.util.Date;
         Date today = Calendar.getInstance().getTime();
         SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
         String resultDateTime = sdf.format(today);
-                //DateUtils.parseDate(new Date(), DATE_FORMAT);
         String screenShotName = "Time: " + resultDateTime;
         makeScreenshot(screenShotName);
     }

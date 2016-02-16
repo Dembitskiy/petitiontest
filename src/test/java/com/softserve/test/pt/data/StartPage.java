@@ -22,13 +22,11 @@ public class StartPage {
         return instance;
     }
 
-    // TODO Add Static
     
     public PetitionPage load() {
         StartData startData = BrowserUtils.get().getStartData();
         if ((startData.getLogin() == null)
                 || (startData.getLogin().isEmpty())) {
-            // TODO Create class Exception + log + report.
             throw new RuntimeException(START_PAGE_UNDEFINED);
         }
         return login(startData);
@@ -38,13 +36,11 @@ public class StartPage {
         BrowserUtils.get(startData);
         return login(startData);
     }
-   
-    // TODO Code Duplicate
+
     public PetitionPage login() {
         StartData startData = BrowserUtils.get().getStartData();
         if ((startData.getLogin() == null)
                 || (startData.getLogin().isEmpty())) {
-            // TODO Create class Exception + log + report.
             throw new RuntimeException(START_PAGE_UNDEFINED);
         }
         return login(startData);
@@ -55,9 +51,6 @@ public class StartPage {
         return new PetitionPage();
     }
 
-    // TODO Code Duplicate
-
-
 
     public void quit() {
         BrowserUtils.get().getBrowser().quit();
@@ -67,7 +60,6 @@ public class StartPage {
         BrowserUtils.closeAll();
     }
 
-    // TODO Add Observe
-    //ControlSearch.get().addLoadCompleteEvent(new PageLoadComplete());
+
 
 }

@@ -8,8 +8,6 @@ import ru.yandex.qatools.allure.annotations.Step;
  */
 public class PetitionPage {
 
-    public static final String SEARCH_RESULT_METALLICA = "Metallica";
-    public static final String SEARCH_RESULT_MINISTER = "міністр";
     private PetitionPageUIMap controls;
 
     private class PetitionPageUIMap {

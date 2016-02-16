@@ -42,38 +42,15 @@ public final class BrowserUtils {
                     instance.startupBrowser(instance.getStartData());
                 }
             } else {
-                // startData != null
-                if (startData != null) {
-            //    System.out.println("*****startData.getBrowserName()="
-              //          +startData.getBrowserName());
-                	}
-                if (instance.getStartData() != null) {
-             //   System.out.println("*****instance.getStartData().getBrowserName()="
-               //         +instance.getStartData().getBrowserName());
-                	}
+
                 if (instance.getStartData() == null) {
                     instance.setStartData(startData);
                 }
-              //  System.out.println("++++startData.getBrowserName()="
-                //        +startData.getBrowserName());
-               // System.out.println("++++instance.getStartData().getBrowserName()="
-                 //       +instance.getStartData().getBrowserName());
-                
-               // System.out.println("\t(instance.getStartData().getBrowser() != null)"
-                 //       +(instance.getStartData().getBrowser() != null));
-                if (instance.getStartData().getBrowser() != null) {
-               // System.out.println("\t(instance.getBrowser().isEnabled())"
-                 //       +(instance.getBrowser().isEnabled())); 
-                	}
-               // System.out.println("\t(!instance.getStartData().getBrowserName().equals(startData.getBrowserName()))"
-                 //       +(!instance.getStartData().getBrowserName().equals(startData.getBrowserName())));
                 
                 if ((instance.getStartData().getBrowser() != null)
                         && (instance.getBrowser().isEnabled())
                         && (!instance.getStartData().getBrowserName().equals(startData.getBrowserName()))) {
-                //    System.out.println("++++instance.getBrowser().close();");
                     instance.getBrowser().close();
-                    // instance.getBrowser().quit();
                     instance.setStartData(startData);
                 }
                 if ((instance.getStartData().getBrowser() == null)
@@ -87,7 +64,6 @@ public final class BrowserUtils {
 
     public static void closeAll() {
         if (instance != null) {
-            // for (Long threadId : instance.browsers.keySet()) {
             for (StartData startData : instance.startDatas.values()) {
                 startData.getBrowser().close();
             }
@@ -145,7 +121,6 @@ public final class BrowserUtils {
                startData.setBrowser((ABrowser) method.invoke(BrowserRepository.get(),
                        new Object[] { startData.getBrowserPath() }));
             } catch (Exception e) {
-                // TODO Create class Exception + log + report.
                 throw new RuntimeException(NO_SUCH_METHOD, e);
             }
         } else {
@@ -153,11 +128,9 @@ public final class BrowserUtils {
                 method = BrowserRepository.class.getMethod(browserName);
                 startData.setBrowser((ABrowser) method.invoke(BrowserRepository.get()));
              } catch (Exception e) {
-                 // TODO Create class Exception + log + report.
                  throw new RuntimeException(NO_SUCH_METHOD, e);
              }
         }
-        // Set Search Strategy
         setSearchStrategy(startData);
     }
 
@@ -165,10 +138,8 @@ public final class BrowserUtils {
         if ((startData.getSearchStrategy() != null) 
                 && (startData.getSearchStrategy().length() > 0)) {
             if (startData.getSearchStrategy().toLowerCase().contains(EXPLICIT)) {
-                //ControlSearch.get().setExplicitStrategy();
                 ControlSearch.get().setContext(ContextRepository.get().getSearchExplicit());
             } else if (startData.getSearchStrategy().toLowerCase().contains(IMPLICIT)) {
-                //ControlSearch.get().setImplicitStrategy();
                 ControlSearch.get().setContext(ContextRepository.get().getSearchImplicit());
             } else {
                 ControlSearch.get().setContext(ContextRepository.get().getSearchDefault());

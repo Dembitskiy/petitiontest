@@ -8,11 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 public class ControlSearch {
     public static final String ERROR_LOAD_FAILED = "Web Page Load Failed";
     private static volatile ControlSearch instance = null;
-    //private List<IObserveLoad> observeLoad; 
     private ASearchContext context;
 
     private ControlSearch() {
-        //this.observeLoad = new ArrayList<IObserveLoad>();
         this.context = ContextRepository.get().getSearchExplicit();
     }
 
@@ -98,8 +96,7 @@ public class ControlSearch {
     public boolean isStatelessOfWebElement(ControlWrapper controlWrapper) {
         return context.isStatelessOfWebElement(controlWrapper);
     }
-
-    //TODO +++ not public
+    
     public Select getVisibleSelectWebElement(ControlLocation controlLocation) {
         return new Select(getVisibleWebElement(controlLocation));
     }
@@ -120,43 +117,6 @@ public class ControlSearch {
         return context.isVisibleTitle(partialTitle);
     }
 
-    /*
-    public void addLoadCompleteEvent(IObserveLoad observeLoad){
-        this.observeLoad.add(observeLoad);
-    }
 
-    public void deleteLoadCompleteEvents(){
-        this.observeLoad.clear();
-    }
-    */
-
-    /*
-    public boolean isLoadComplete() {
-        int countLoadCompletePages = 0;
-        long beginTime;
-        for (IObserveLoad currentObserveLoad : this.observeLoad) {
-            beginTime = System.currentTimeMillis();
-            while (System.currentTimeMillis() - beginTime < ONE_SECOND
-                    * ImplicitWrapper.get().getImplicitlyWaitTimeout()) {
-                if (currentObserveLoad.loadComplete()) {
-                    countLoadCompletePages++;
-                    break;
-                }
-                try {
-                    Thread.sleep(ContextUtils.ONE_SECOND / 2);
-                } catch (Exception e) {
-                    throw new GeneralCustomException(String.format(ContextUtils.ERROR_LOAD_FAILED,
-                            WebDriverUtils.get().getWebDriver().getCurrentUrl()));
-                }
-            }
-        }
-        // TODO MultiThread Correction
-        if (countLoadCompletePages != this.observeLoad.size()) {
-            throw new GeneralCustomException(
-                    String.format(ContextUtils.ERROR_LOAD_FAILED, WebDriverUtils.get().getWebDriver().getCurrentUrl()));
-        }
-        return countLoadCompletePages == this.observeLoad.size();
-    }
-    */
     
 }

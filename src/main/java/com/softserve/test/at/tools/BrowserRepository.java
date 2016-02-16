@@ -33,13 +33,8 @@ final class BrowserRepository {
         return instance;
     }
 
-//    public ABrowser getNullBrowser() {
-//        // TODO Create default class without create webdriver.
-//        return null;
-//    }
 
     public ABrowser getDefaultBrowser() {
-        // TODO Create default class without create webdriver.
         return getFirefoxByTemporaryProfile();
     }
 

@@ -3,11 +3,11 @@ package com.softserve.test.pt.tests;
 import com.softserve.test.at.data.StartData;
 import com.softserve.test.at.tools.BrowserUtils;
 import com.softserve.test.pt.data.StartPage;
+import com.softserve.test.pt.data.StringSearchRepository;
 import com.softserve.test.pt.pages.PetitionPage;
 import com.softserve.test.pt.pages.PetitionSearchPage;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.allure.annotations.Attachment;
 import ru.yandex.qatools.allure.annotations.Description;
@@ -34,14 +34,21 @@ public class PetitionSearchTest {
         BrowserUtils.get().getBrowser().close();
     }
 
-    @Title("petition metallica test")
-    @Description("check if 'Запросити в Україну легендарну рок-групу Metallica' text is present on the page")
-    @Test
-    public void checkmetallicapetition() {
+
+    @DataProvider
+    public Object[][] MetallicaSearch() {
+        return new Object[][] { {StringSearchRepository.getMetallicaSearch(), StringSearchRepository.getMetallicaSearchResult()},
+                {StringSearchRepository.getMinisterSearch(), StringSearchRepository.getMinisterSearchResult()} };
+    }
+
+
+    @Title("petition search test")
+    @Description("check if text is present on the page")
+    @Test(dataProvider = "MetallicaSearch")
+    public void checkmetallicapetition(String search, String result) {
         PetitionPage petitionPage = StartPage.get().load(startData);
-        PetitionSearchPage petitionSearchPage = petitionPage.search(PetitionPage.SEARCH_RESULT_METALLICA);
-        softAssert.assertEquals(petitionSearchPage.findText(PetitionSearchPage.FIND_TEXT_METALLICA), true);
-        softAssert.assertAll();
+        PetitionSearchPage petitionSearchPage = petitionPage.search(search);
+        Assert.assertEquals(petitionSearchPage.findText(result), true);
     }
 
 

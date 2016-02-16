@@ -13,12 +13,10 @@ public abstract class ABrowser {
         this.driver = driver;
     }
 
-    //TODO +++ Set Package Access
     public WebDriver getWebDriver() {
         if (driver != null) {
             return driver;
         } else {
-            // TODO Create class Exception + log + report.
             throw new RuntimeException(BROWSER_CLOSED);
         }
     }
@@ -44,12 +42,10 @@ public abstract class ABrowser {
     }
 
     public void forwardPage() {
-        // TODO Use try
         getWebDriver().navigate().forward();
     }
 
     public void previousPage() {
-        // TODO Use try
         getWebDriver().navigate().back();
     }
 
