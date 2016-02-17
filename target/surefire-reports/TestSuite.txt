@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.23 sec <<< FAILURE! - in TestSuite
+checkmetallicapetition(com.softserve.test.pt.tests.PetitionSearchTest)  Time elapsed: 28.037 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:288)
+	at org.testng.Assert.assertEquals(Assert.java:298)
+	at com.softserve.test.pt.tests.PetitionSearchTest.checkmetallicapetition(PetitionSearchTest.java:45)
+

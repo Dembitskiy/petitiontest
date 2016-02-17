@@ -40,8 +40,6 @@ public class ControlWrapper {
         return webElement;
     }
 
-    // For Implements Interface
-
     public String getAttribute(String attribute) {
         return getWebElement().getAttribute(attribute);
     }
@@ -51,7 +49,6 @@ public class ControlWrapper {
     }
 
     public String getContent() {
-        // TODO Develop getContent with tags
         return getWebElement().getText();
     }
 
@@ -67,7 +64,6 @@ public class ControlWrapper {
         if (getTagName().toLowerCase().equals(TAG_A)) {
             return getWebElement().getAttribute(ATTRIBUTE_HREF);
         } else {
-            // TODO
             throw new RuntimeException(INVALID_TAG);
         }
     }

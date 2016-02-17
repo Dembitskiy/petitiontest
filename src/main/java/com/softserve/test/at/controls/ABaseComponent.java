@@ -10,8 +10,7 @@ public abstract class ABaseComponent<TComponent> {
     private TComponent tComponent;
 
     protected ABaseComponent() {
-        // TODO Create tComponent using Reflection API
-        // tComponent = this;
+
     }
  
     public TComponent getById(String id) {

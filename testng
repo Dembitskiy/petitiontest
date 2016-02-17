@@ -5,7 +5,7 @@
     <test name="petitiontests">
         <classes>
             <class name="com.softserve.test.pt.tests.PetitionSearchTest"/>
-            <class name="com.softserve.test.pt.tests.PetitionSearchMinisterTest"/>
+            <class name="com.softserve.test.pt.tests.PetitionLoginTest"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

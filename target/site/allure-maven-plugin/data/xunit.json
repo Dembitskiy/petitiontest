@@ -1,0 +1,60 @@
+{
+  "time" : {
+    "start" : 1455705885576,
+    "stop" : 1455705924937,
+    "duration" : 39361
+  },
+  "testSuites" : [ {
+    "uid" : "8b3ba5abafb68da3",
+    "name" : "Petitionsuite : petitiontests",
+    "title" : "Petitionsuite : petitiontests",
+    "time" : {
+      "start" : 1455705885576,
+      "stop" : 1455705924937,
+      "duration" : 39361
+    },
+    "statistic" : {
+      "total" : 3,
+      "passed" : 2,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 1,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "e25204d677c03510",
+      "name" : "checkmetallicapetition[Metallica,Запросити в Україну легендарну рок-групу Metallica]",
+      "title" : "petition search test",
+      "time" : {
+        "start" : 1455705885576,
+        "stop" : 1455705913594,
+        "duration" : 28018
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "b30cb0abaa09c332",
+      "name" : "checkmetallicapetition[Міністр,Вибори прем'єр-міністра за відкритим конкурсом]",
+      "title" : "petition search test",
+      "time" : {
+        "start" : 1455705913595,
+        "stop" : 1455705914998,
+        "duration" : 1403
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ad35878647b2461",
+      "name" : "checkministrpetition",
+      "title" : "Checkministrpetition",
+      "time" : {
+        "start" : 1455705915011,
+        "stop" : 1455705924937,
+        "duration" : 9926
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  } ]
+}
