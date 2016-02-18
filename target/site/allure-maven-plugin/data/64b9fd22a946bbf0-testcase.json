@@ -1,0 +1,65 @@
+{
+  "uid" : "64b9fd22a946bbf0",
+  "name" : "checkmetallicapetition[Міністр,Вибори прем'єр-міністра за відкритим конкурсом]",
+  "title" : "petition search test",
+  "time" : {
+    "start" : 1455794459124,
+    "stop" : 1455794461645,
+    "duration" : 2521
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "check if text of searched petition is present on the page",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "6b07f1eadf4f770e",
+    "name" : "Petitionsuite : petitiontests",
+    "title" : "Petitionsuite : petitiontests"
+  },
+  "steps" : [ {
+    "name" : "search[Міністр]",
+    "title" : "find petitions by search field",
+    "time" : {
+      "start" : 1455794459991,
+      "stop" : 1455794461629,
+      "duration" : 1638
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "sultan"
+  }, {
+    "name" : "thread",
+    "value" : "7624@sultan.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Petitionsuite : petitiontests"
+  }, {
+    "name" : "suite-title",
+    "value" : "Petitionsuite : petitiontests"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}
