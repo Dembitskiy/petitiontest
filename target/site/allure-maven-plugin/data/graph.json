@@ -1,34 +1,34 @@
 {
   "testCases" : [ {
-    "uid" : "e25204d677c03510",
+    "uid" : "33959a9f1afc71df",
     "name" : "checkmetallicapetition[Metallica,Запросити в Україну легендарну рок-групу Metallica]",
     "title" : "petition search test",
     "time" : {
-      "start" : 1455705885576,
-      "stop" : 1455705913594,
-      "duration" : 28018
+      "start" : 1455787349527,
+      "stop" : 1455787364036,
+      "duration" : 14509
     },
     "severity" : "NORMAL",
     "status" : "FAILED"
   }, {
-    "uid" : "b30cb0abaa09c332",
+    "uid" : "c5859b671fb1249d",
     "name" : "checkmetallicapetition[Міністр,Вибори прем'єр-міністра за відкритим конкурсом]",
     "title" : "petition search test",
     "time" : {
-      "start" : 1455705913595,
-      "stop" : 1455705914998,
-      "duration" : 1403
+      "start" : 1455787364038,
+      "stop" : 1455787365363,
+      "duration" : 1325
     },
     "severity" : "NORMAL",
     "status" : "PASSED"
   }, {
-    "uid" : "ad35878647b2461",
+    "uid" : "2971c360e33b4d6f",
     "name" : "checkministrpetition",
-    "title" : "Checkministrpetition",
+    "title" : "petition login test",
     "time" : {
-      "start" : 1455705915011,
-      "stop" : 1455705924937,
-      "duration" : 9926
+      "start" : 1455787365380,
+      "stop" : 1455787375687,
+      "duration" : 10307
     },
     "severity" : "NORMAL",
     "status" : "PASSED"

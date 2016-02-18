@@ -9,12 +9,10 @@ final class ChromeBrowser extends ABrowser {
     private final String CHROME_PROPERTY = "webdriver.chrome.driver";
 
     ChromeBrowser() {
-        //super();
         init(BrowserPath.CHROME_PATH.toString());
     }
 
     ChromeBrowser(String browserPath) {
-        //super();
         init(browserPath);
     }
 

@@ -45,14 +45,12 @@ class SearchExplicit extends ASearchContext {
                     .visibilityOfElementLocated(controlLocation.getBy()));
         } catch (Exception e) {
             // TODO
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_NOT_FOUND,
-//                    controlLocation.getValue()));
+
             throw new RuntimeException(String.format(ASearchContext.ERROR_NOT_FOUND,
                     controlLocation.getValue()));
         }
         if (webElement == null) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_NOT_FOUND,
-//                    controlLocation.getValue()));
+
             throw new RuntimeException(String.format(ASearchContext.ERROR_NOT_FOUND,
                     controlLocation.getValue()));
         }
@@ -68,14 +66,12 @@ class SearchExplicit extends ASearchContext {
             .until(ExpectedConditions
                 .visibilityOfAllElementsLocatedBy(controlLocation.getBy()));
         } catch (Exception e) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_NOT_FOUND,
-//                    controlLocation.getValue()));
+
             throw new RuntimeException(String.format(ASearchContext.ERROR_NOT_FOUND,
                     controlLocation.getValue()));
         }
         if ((webElements == null) || (webElements.size() == 0)) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_NOT_FOUND,
-//                    controlLocation.getValue()));
+
             throw new RuntimeException(String.format(ASearchContext.ERROR_NOT_FOUND,
                     controlLocation.getValue()));
         }
@@ -91,14 +87,12 @@ class SearchExplicit extends ASearchContext {
                 .until(ExpectedConditions
                     .presenceOfElementLocated(controlLocation.getBy()));
         } catch (Exception e) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_NOT_FOUND,
-//                    controlLocation.getValue()));
+
             throw new RuntimeException(String.format(ASearchContext.ERROR_NOT_FOUND,
                     controlLocation.getValue()));
         }
         if (webElement == null) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_NOT_FOUND,
-//                    controlLocation.getValue()));
+
             throw new RuntimeException(String.format(ASearchContext.ERROR_NOT_FOUND,
                     controlLocation.getValue()));
         }
@@ -114,14 +108,12 @@ class SearchExplicit extends ASearchContext {
                 .until(ExpectedConditions
                     .invisibilityOfElementLocated(controlLocation.getBy()));
         } catch (Exception e) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_STILL_VISIBLE,
-//                    controlLocation.getValue()));
+
             throw new RuntimeException(String.format(ASearchContext.ERROR_STILL_VISIBLE,
                     controlLocation.getValue()));
         }
         if (!invisibilityWebElement) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_STILL_VISIBLE,
-//                    controlLocation.getValue()));
+
             throw new RuntimeException(String.format(ASearchContext.ERROR_STILL_VISIBLE,
                     controlLocation.getValue()));
         }
@@ -137,14 +129,12 @@ class SearchExplicit extends ASearchContext {
                 .until(ExpectedConditions
                     .invisibilityOfElementWithText(controlLocation.getBy(), text));
         } catch (Exception e) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_STILL_VISIBLE,
-//                    controlLocation.getValue()));
+
             throw new RuntimeException(String.format(ASearchContext.ERROR_STILL_VISIBLE,
                     controlLocation.getValue()));
         }
         if (!invisibilityWebElement) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_STILL_VISIBLE,
-//                    controlLocation.getValue()));
+
             throw new RuntimeException(String.format(ASearchContext.ERROR_STILL_VISIBLE,
                     controlLocation.getValue()));
         }
@@ -166,8 +156,6 @@ class SearchExplicit extends ASearchContext {
                     controlWrapper.getWebElement().getTagName()));
         }
         if (!statelessOfWebElement) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchContext.ERROR_STILL_VISIBLE,
-//                    controlWrapper.getWebElement().getTagName()));
             throw new RuntimeException(String.format(ASearchContext.ERROR_STILL_VISIBLE,
                     controlWrapper.getWebElement().getTagName()));
         }
@@ -182,15 +170,11 @@ class SearchExplicit extends ASearchContext {
                         getExplicitlyWaitTimeout())
                 .until(ExpectedConditions
                     .titleContains(partialTitle));
-        } catch (Exception e) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_TITLE_INVISIBLE,
-//                    partialTitle));
+        } catch (Exception e) {;
             throw new RuntimeException(String.format(ASearchContext.ERROR_TITLE_INVISIBLE,
                     partialTitle));
         }
         if (visibleTitle) {
-//            throw new ScreenCapturingCustomException(String.format(ASearchControl.ERROR_TITLE_INVISIBLE,
-//                    partialTitle));
             throw new RuntimeException(String.format(ASearchContext.ERROR_TITLE_INVISIBLE,
                     partialTitle));
         }

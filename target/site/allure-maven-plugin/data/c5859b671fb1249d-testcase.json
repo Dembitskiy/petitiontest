@@ -1,11 +1,11 @@
 {
-  "uid" : "ad35878647b2461",
-  "name" : "checkministrpetition",
-  "title" : "Checkministrpetition",
+  "uid" : "c5859b671fb1249d",
+  "name" : "checkmetallicapetition[Міністр,Вибори прем'єр-міністра за відкритим конкурсом]",
+  "title" : "petition search test",
   "time" : {
-    "start" : 1455705915011,
-    "stop" : 1455705924937,
-    "duration" : 9926
+    "start" : 1455787364038,
+    "stop" : 1455787365363,
+    "duration" : 1325
   },
   "summary" : {
     "attachments" : 0,
@@ -13,24 +13,24 @@
   },
   "failure" : null,
   "description" : {
-    "value" : "",
+    "value" : "check if text of searched petition is present on the page",
     "type" : "TEXT"
   },
   "severity" : "NORMAL",
   "status" : "PASSED",
   "testId" : null,
   "suite" : {
-    "uid" : "8b3ba5abafb68da3",
+    "uid" : "94299dbbbf664d02",
     "name" : "Petitionsuite : petitiontests",
     "title" : "Petitionsuite : petitiontests"
   },
   "steps" : [ {
-    "name" : "checkEnterText",
-    "title" : "check if enter text is present on the loginpage",
+    "name" : "search[Міністр]",
+    "title" : "find petitions by search field",
     "time" : {
-      "start" : 1455705924930,
-      "stop" : 1455705924937,
-      "duration" : 7
+      "start" : 1455787364642,
+      "stop" : 1455787365346,
+      "duration" : 704
     },
     "summary" : {
       "attachments" : 0,
@@ -47,7 +47,7 @@
     "value" : "sultan"
   }, {
     "name" : "thread",
-    "value" : "8184@sultan.main(1)"
+    "value" : "3872@sultan.main(1)"
   }, {
     "name" : "suite-name",
     "value" : "Petitionsuite : petitiontests"

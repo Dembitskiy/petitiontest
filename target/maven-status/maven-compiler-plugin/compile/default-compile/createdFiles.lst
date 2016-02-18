@@ -5,7 +5,6 @@ com\softserve\test\at\tools\ControlWrapper.class
 com\softserve\test\at\tools\ChromeBrowser.class
 com\softserve\test\at\controls\Component.class
 com\softserve\test\at\controls\ITextField.class
-com\softserve\test\at\controls\ILink.class
 com\softserve\test\at\controls\Label.class
 com\softserve\test\at\controls\AComponent.class
 com\softserve\test\at\data\StartData.class
@@ -22,10 +21,8 @@ com\softserve\test\at\tools\BrowserUtils.class
 com\softserve\test\at\controls\ALabelClickable.class
 com\softserve\test\at\tools\ControlLocation.class
 com\softserve\test\at\controls\ALabel.class
-com\softserve\test\at\controls\ALink.class
 com\softserve\test\at\tools\BrowserRepository.class
 com\softserve\test\at\tools\SearchImplicit.class
-com\softserve\test\at\controls\Link.class
 com\softserve\test\at\tools\ControlSearch.class
 com\softserve\test\at\tools\ABrowser.class
 com\softserve\test\at\controls\ILabelClickable.class
