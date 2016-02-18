@@ -1,11 +1,11 @@
 {
-  "uid" : "33959a9f1afc71df",
+  "uid" : "748cd9615fde188",
   "name" : "checkmetallicapetition[Metallica,Запросити в Україну легендарну рок-групу Metallica]",
   "title" : "petition search test",
   "time" : {
-    "start" : 1455787349527,
-    "stop" : 1455787364036,
-    "duration" : 14509
+    "start" : 1455792621849,
+    "stop" : 1455792646178,
+    "duration" : 24329
   },
   "summary" : {
     "attachments" : 1,
@@ -23,7 +23,7 @@
   "status" : "FAILED",
   "testId" : null,
   "suite" : {
-    "uid" : "94299dbbbf664d02",
+    "uid" : "c7b21f7c7f0bc086",
     "name" : "Petitionsuite : petitiontests",
     "title" : "Petitionsuite : petitiontests"
   },
@@ -31,9 +31,9 @@
     "name" : "search[Metallica]",
     "title" : "find petitions by search field",
     "time" : {
-      "start" : 1455787362418,
-      "stop" : 1455787363731,
-      "duration" : 1313
+      "start" : 1455792636889,
+      "stop" : 1455792639952,
+      "duration" : 3063
     },
     "summary" : {
       "attachments" : 0,
@@ -44,11 +44,11 @@
     "steps" : [ ]
   } ],
   "attachments" : [ {
-    "title" : "Time: лют.-18-2016 11:22:43",
-    "source" : "876fd555-3791-4e47-820d-8364f273b64d-attachment.png",
+    "title" : "Time: лют.-18-2016 12:50:39",
+    "source" : "d46dd49f-1163-4271-bc3d-66a5a482d97f-attachment.png",
     "type" : "image/png",
-    "size" : 46892,
-    "uid" : "dc2d679965ae5594"
+    "size" : 44392,
+    "uid" : "b944f2d462056400"
   } ],
   "issues" : [ ],
   "labels" : [ {
@@ -56,7 +56,7 @@
     "value" : "sultan"
   }, {
     "name" : "thread",
-    "value" : "3872@sultan.main(1)"
+    "value" : "412@sultan.main(1)"
   }, {
     "name" : "suite-name",
     "value" : "Petitionsuite : petitiontests"

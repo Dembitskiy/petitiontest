@@ -1,17 +1,17 @@
 {
   "time" : {
-    "start" : 1455787349527,
-    "stop" : 1455787375687,
-    "duration" : 26160
+    "start" : 1455792621849,
+    "stop" : 1455792658457,
+    "duration" : 36608
   },
   "testSuites" : [ {
-    "uid" : "94299dbbbf664d02",
+    "uid" : "c7b21f7c7f0bc086",
     "name" : "Petitionsuite : petitiontests",
     "title" : "Petitionsuite : petitiontests",
     "time" : {
-      "start" : 1455787349527,
-      "stop" : 1455787375687,
-      "duration" : 26160
+      "start" : 1455792621849,
+      "stop" : 1455792658457,
+      "duration" : 36608
     },
     "statistic" : {
       "total" : 3,
@@ -23,35 +23,35 @@
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "33959a9f1afc71df",
+      "uid" : "748cd9615fde188",
       "name" : "checkmetallicapetition[Metallica,Запросити в Україну легендарну рок-групу Metallica]",
       "title" : "petition search test",
       "time" : {
-        "start" : 1455787349527,
-        "stop" : 1455787364036,
-        "duration" : 14509
+        "start" : 1455792621849,
+        "stop" : 1455792646178,
+        "duration" : 24329
       },
       "severity" : "NORMAL",
       "status" : "FAILED"
     }, {
-      "uid" : "c5859b671fb1249d",
+      "uid" : "d1b78a63afcc913d",
       "name" : "checkmetallicapetition[Міністр,Вибори прем'єр-міністра за відкритим конкурсом]",
       "title" : "petition search test",
       "time" : {
-        "start" : 1455787364038,
-        "stop" : 1455787365363,
-        "duration" : 1325
+        "start" : 1455792646180,
+        "stop" : 1455792648398,
+        "duration" : 2218
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "2971c360e33b4d6f",
+      "uid" : "494bc8709d6e22af",
       "name" : "checkministrpetition",
       "title" : "petition login test",
       "time" : {
-        "start" : 1455787365380,
-        "stop" : 1455787375687,
-        "duration" : 10307
+        "start" : 1455792649123,
+        "stop" : 1455792658457,
+        "duration" : 9334
       },
       "severity" : "NORMAL",
       "status" : "PASSED"

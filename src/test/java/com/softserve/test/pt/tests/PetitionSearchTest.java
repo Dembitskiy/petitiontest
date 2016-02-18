@@ -20,7 +20,7 @@ public class PetitionSearchTest {
     @BeforeClass
     public void beforeClass() {
         startData = new StartData("https://petition.president.gov.ua/",
-                "explicit", "firefox", "");
+                "explicit", "chrome", "");
     }
 
     @AfterClass

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite start="1455787349413" stop="1455787375696" version="1.4.16" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+<ns2:test-suite start="1455792621713" stop="1455792659773" version="1.4.16" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
     <name>Petitionsuite : petitiontests</name>
     <title>Petitionsuite : petitiontests</title>
     <test-cases>
-        <test-case start="1455787349527" stop="1455787364036" status="failed">
+        <test-case start="1455792621849" stop="1455792646178" status="failed">
             <name>checkmetallicapetition[Metallica,Запросити в Україну легендарну рок-групу Metallica]</name>
             <title>petition search test</title>
             <description type="text">check if text of searched petition is present on the page</description>
@@ -46,25 +46,25 @@
 </stack-trace>
             </failure>
             <steps>
-                <step start="1455787362418" stop="1455787363731" status="passed">
+                <step start="1455792636889" stop="1455792639952" status="passed">
                     <name>search[Metallica]</name>
                     <title>find petitions by search field</title>
                 </step>
             </steps>
             <attachments>
-                <attachment title="Time: лют.-18-2016 11:22:43" source="876fd555-3791-4e47-820d-8364f273b64d-attachment.png" type="image/png"/>
+                <attachment title="Time: лют.-18-2016 12:50:39" source="d46dd49f-1163-4271-bc3d-66a5a482d97f-attachment.png" type="image/png"/>
             </attachments>
             <labels>
                 <label name="host" value="sultan"/>
-                <label name="thread" value="3872@sultan.main(1)"/>
+                <label name="thread" value="412@sultan.main(1)"/>
             </labels>
         </test-case>
-        <test-case start="1455787364038" stop="1455787365363" status="passed">
+        <test-case start="1455792646180" stop="1455792648398" status="passed">
             <name>checkmetallicapetition[Міністр,Вибори прем'єр-міністра за відкритим конкурсом]</name>
             <title>petition search test</title>
             <description type="text">check if text of searched petition is present on the page</description>
             <steps>
-                <step start="1455787364642" stop="1455787365346" status="passed">
+                <step start="1455792646969" stop="1455792648376" status="passed">
                     <name>search[Міністр]</name>
                     <title>find petitions by search field</title>
                     <attachments/>
@@ -74,15 +74,15 @@
             <attachments/>
             <labels>
                 <label name="host" value="sultan"/>
-                <label name="thread" value="3872@sultan.main(1)"/>
+                <label name="thread" value="412@sultan.main(1)"/>
             </labels>
         </test-case>
-        <test-case start="1455787365380" stop="1455787375687" status="passed">
+        <test-case start="1455792649123" stop="1455792658457" status="passed">
             <name>checkministrpetition</name>
             <title>petition login test</title>
             <description type="text">check if login page downloaded correctly</description>
             <steps>
-                <step start="1455787375678" stop="1455787375687" status="passed">
+                <step start="1455792658444" stop="1455792658457" status="passed">
                     <name>checkEnterText</name>
                     <title>check if enter text is present on the loginpage</title>
                     <attachments/>
@@ -92,7 +92,7 @@
             <attachments/>
             <labels>
                 <label name="host" value="sultan"/>
-                <label name="thread" value="3872@sultan.main(1)"/>
+                <label name="thread" value="412@sultan.main(1)"/>
             </labels>
         </test-case>
     </test-cases>
